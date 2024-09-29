@@ -1,0 +1,15 @@
+version: '3'
+
+tasks:
+
+  default:
+    cmds:
+      - task --list-all
+
+  test:
+    cmds:
+      - go test
+
+  build:
+    cmds:
+      - go build -o bin/app cwords.go 
